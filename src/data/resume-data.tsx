@@ -17,262 +17,174 @@ import {
   TastyCloudLogo,
   YearProgressLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, XIcon, GoogleScholarIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Parker Glenn",
+  initials: "PG",
+  location: "Somerville, MA",
+  locationLink: "https://www.google.com/maps/place/Somerville",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "Data Scientist working in NLP",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+    "Hi! My name is Parker Glenn. I'm a Data Scientist exploring all things language & tech. I'm currently very interested in methods combining symbolic reasoning with LLMs, constrained decoding, and database systems.",
+  avatarUrl: "https://avatars.githubusercontent.com/u/44219290?s=400&u=9ac7aa2539d25838682467b44ffd37a1e95c886f&v=4",
+  personalWebsiteUrl: "",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "parkervg5@gmail.com",
+    tel: "",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/parkervg",
         icon: GitHubIcon,
       },
       {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=UH8IP5QAAAAJ&hl=en",
+        icon: GoogleScholarIcon,
+      },
+      {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/parker-glenn5/",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://twitter.com/parkglenn55",
         icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Brandeis University",
+      degree: "M.S. in Computational Linguistics",
+      start: "2020",
+      end: "2022",
     },
+    {
+      school: "University of California, Santa Barbara",
+      degree: "B.A. in Linguistics, Concentration in Speech and Language Technology",
+      start: "2018",
+      end: "2020",
+    }
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      company: "Fidelity Investments",
+      link: "https://www.fidelity.com/",
+      badges: [],
+      title: "Data Scientist",
+      // logo: ParabolLogo,
+      start: "2022",
+      end: "",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "Led team's first peer-reviewed publication. Improve contextual understanding of customer service virtual assistant. Fine-tune large language models (LLMs) on Amazon SageMaker. Leverage constrained generation for tasks such as semantic parsing and query rewriting.",
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
+      company: "Workhuman",
+      link: "https://www.workhuman.com/",
+      badges: [],
+      title: "NLP Intern",
+      // logo: ClevertechLogo,
+      start: "2021",
+      end: "2022",
+      description:
+        "Led Workhuman's first peer-reviewed publication. Created system for information extraction and temporally-dependent topic modeling with Gensim and Pandas, winning an internal Customer Strategy innovation competition,",
+    },
+    {
+      company: "Brandeis University",
+      link: "https://www.brandeis.edu/",
+      badges: [],
+      title: "Graduate Research Assistant",
+      // logo: JojoMobileLogo,
+      start: "2020",
       end: "2021",
       description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
+        "Researched affordance extraction and multimodal NLU under Prof. James Pustejovsky. Designed and deployed Mechanical Turk annotation task for pairing actions to images.",
     },
     {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
+      company: "Briq",
+      link: "https://briq.com/",
       badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
+      title: "Data Science Intern → Junior Software Engineer",
       logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+      start: "2019",
+      end: "2020",
+      description: "Created and managed Python microservices deployed in Kubernetes with Docker. Developed semantic search build on ElasticSearch.",
     },
   ],
   skills: [
-    "JavaScript",
-    "TypeScript",
-    "React/Next.js/Remix",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    "Python",
+      "SQL",
+      "Bash",
+      "PyTorch",
+      "SageMaker",
+      "FastAPI",
+      "Amazon Web Services (AWS)",
+      "Google Cloud Platform (GCP)"
   ],
   projects: [
     {
-      title: "Consultly",
+      title: "BlendSQL",
       techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+          "📝 Research Paper",
+        "Python",
+          "sqlglot",
+          "guidance",
+          "pyparsing"
       ],
-      description: "A platform to build and grow your online business",
+      description: "A unified dialect for orchestrating SQLite logic and LLM reasoning.",
       logo: ConsultlyLogo,
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        // label: "BlendSQL",
+        href: "https://parkervg.github.io/blendsql/",
       },
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
+      title: "DestT5",
+      techStack: ["📝 Research Paper", "PyTorch"],
       description:
-        "Browser extension that records everything happening in a web application",
+        "Interactive semantic parsing with T5. Accepted at NLP4ConvAI, ACL 2023.",
       logo: MonitoLogo,
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        // label: "destt5.com",
+        href: "https://aclanthology.org/2023.nlp4convai-1.3/",
       },
     },
     {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
+      title: "Discourse Referent Prediction",
+      techStack: ["PyTorch", "FastAPI", "Docker"],
       description:
-        "My personal website and blog. Built with Next.js and Notion API",
+        "Generative RNN with dynamic entity representations. Performs coreference, and predicts the next mentioned noun phrase in a narrative.",
       logo: JarockiMeLogo,
       link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
+        // label: "github.com",
+        href: "https://parkervg.github.io/discourse-referent-demo/?",
       },
     },
     {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
+      title: "Evolving Parity Solutions",
+      techStack: ["numpy", "numba", "multiprocessing"],
       description:
-        "Minimalist calendars, habit trackers and planners generator",
+        "Using evolutionary algorithms to create bit-string rules for one-dimensional cellular automata.",
       logo: Minimal,
       link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
+        // label: "useminimal.com",
+        href: "https://github.com/parkervg/parity-evolution?",
       },
     },
     {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
+      title: "Reducing Embedding Dimensionality with SHAP",
+      techStack: ["📝 Research Paper"],
       description:
-        "Generates beautiful wallpapers using random shapes and gradients",
+        "An early research project exploring the dimensions of static word embeddings and their impact on downstream classification tasks.",
       logo: BarepapersLogo,
       link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
+        // label: "barepapers.com",
+        href: "https://github.com/parkervg/shap-dim-reduction/blob/master/shap_dim_reduction.pdf",
       },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
-      techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
-      link: {
-        label: "github.com",
-        href: "https://parabol.co/",
-      },
-    },
-    {
-      title: "Evercast",
-      techStack: [
-        "Lead Frontend Developer",
-
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
-      link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
-      },
-    },
-    {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
-    },
+    }
   ],
 } as const;
