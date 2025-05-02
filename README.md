@@ -1,67 +1,115 @@
-![cv](https://github.com/BartoszJarocki/cv/assets/1017620/79bdb9fc-0b20-4d2c-aafe-0526ad4a71d2)
+# moving
 
-# Minimalist CV [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBartoszJarocki%2Fcv)
+[![Gem Version](https://badge.fury.io/rb/moving.svg)](https://badge.fury.io/rb/moving) ![](https://img.shields.io/gem/dt/moving)
 
-Simple web app that renders minimalist CV with print-friendly layout.
+Moving is a clean and minimalist theme for [Jekyll](https://jekyllrb.com/), focusing on pure and efficient writing. [[view demo]](https://huangyz.name/moving/)
 
-Built with Next.js and shadcn/ui, deployed on Vercel.
 
-# Features
+![](./.github/banner.png)
 
-- Setup only takes a few minutes [single config file](./src/data/resume-data.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/ui, TailwindCss
-- Auto generated Layout
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+If you enjoy this theme, you can buy me a coffee : )
 
-# Getting Started Locally
+[![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/huangyz0918)
 
-1. Clone this repository to your local machine:
+## Installation
 
-   ```bash
-   git clone https://github.com/BartoszJarocki/cv.git
-   ```
+### New Blog
 
-2. Move to the cloned directory
+If you want to create a new blog using moving. You can follow these steps after setting up the [Jekyll](https://jekyllrb.com) environments:
 
-   ```bash
-   cd cv
-   ```
+Clone this repository:
 
-3. Install dependencies:
-
-   ```bash
-   yarn install
-   ```
-
-4. Start the local Server:
-
-   ```bash
-   yarn dev
-   ```
-
-5. Open the [Config file](./src/data/resume-data.tsx) and make changes
-
-# Run with Docker
-
-Build the container
-
-```
-docker compose build
+```bash
+git clone https://github.com/huangyz0918/moving.git
 ```
 
-Run the container
+Move into that directory:
 
-```
-docker compose up -d
-```
-
-Stop the Container
-
-```
-docker compose down 
+```bash
+cd moving/
 ```
 
-# License
+Install required gems using `bundle`:
 
-[MIT](https://choosealicense.com/licenses/mit/)
+```bash
+bundle install
+```
+
+Run the blog in localhost
+
+```bash
+jekyll serve
+```
+
+Once you successfully run the moving blog, you can modify the theme and add posts by yourself, have fun!
+
+### Add Moving to an Existing Blog
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "moving"
+```
+
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: moving
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install moving
+
+### Deploy to Github Pages
+
+:warning: If you want to publish your site in [Github Pages](https://pages.github.com/). Change `theme: xxx` in `_config.yml` to `remote_theme: huangyz0918/moving` then push to your github repo (this is important, or you will get an error from github pages that not support the moving theme). If you want to test your site locally, you can change that to `theme: moving` and build again.
+
+Here is an [example](https://github.com/huangyz0918/personal-page-blog) for Github Pages.
+
+## Usage
+
+You can modify the `_config.yml` to custom your blog. An example is if you want to change the back button's text in each post, you can change the `back_to`.
+
+```yaml
+title: Moving # The title of the blog
+author: Your Name # Your name
+email: your-email@domain.com # your email shown in the footer
+url: https://huangyz.name/moving/ # this is your site's root address.
+description: > # this means to ignore newlines until "show_excerpts:"
+  A clean and minimalist theme for Jekyll.
+favicon: "./favicon.ico" # set the favicon of the site
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Moving date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+moving:
+  avatar_url: "https://i.loli.net/2019/08/26/JzCLhDWPEybZr2T.jpg" # avatar in about page
+  about_you: a short description about you. # short description about you in about page
+  date_format: "%b %d" # date format of posts in home page
+  back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
+
+# Build settings
+theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.
+```
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at [here](https://github.com/huangyz0918/moving). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `moving.gemspec` accordingly.
+
+## License
+
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
